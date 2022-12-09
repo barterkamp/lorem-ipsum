@@ -1,0 +1,40 @@
+.header {
+  border: 1px solid red;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.header__language {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: end;
+  margin-bottom: 7.5rem;
+}
+
+.header__input {
+  display: flex;
+  margin: 0;
+}
+
+#language input[type="checkbox"] {
+  display: none;
+}
+
+#language span {
+  padding: 3px;
+  text-transform: uppercase;
+  color: $lorem-dark-gray;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 4rem;
+  width: 200px;
+  border: 2px solid $lorem-light-gray;
+}
+
+// #language input[type="checkbox"]:checked + span {
+//   background-color: $lorem-blue;
+//   color: white;
+// }

@@ -1,0 +1,28 @@
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+  align-items: flex-end;
+  list-style: none;
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.navigation__link {
+  display: block;
+  padding-bottom: 1.3rem;
+  text-decoration: none;
+  color: $lorem-dark-gray;
+  cursor: pointer;
+  border: 1px solid green;
+  margin: 0;
+
+  &:hover,
+  &[aria-current="page"] {
+    text-decoration: underline 4px solid $lorem-blue;
+    text-underline-offset: 1.5rem;
+    color: $lorem-blue;
+  }
+}
