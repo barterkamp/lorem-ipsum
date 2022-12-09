@@ -24,6 +24,7 @@
   padding: 3px;
   text-transform: uppercase;
   color: $lorem-dark-gray;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -32,6 +33,12 @@
   left: 4rem;
   width: 200px;
   border: 2px solid $lorem-light-gray;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    top: 70px;
+    left: 3rem;
+  }
 }
 
 // #language input[type="checkbox"]:checked + span {
