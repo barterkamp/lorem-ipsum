@@ -85,6 +85,7 @@ p {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 25px;
+  margin: 0;
 }
 
 h1,
@@ -95,6 +96,12 @@ h2 {
   margin-top: 0;
   margin-bottom: 2rem;
   line-height: 44px;
+}
+@media (max-width: 767px) {
+  h1,
+h2 {
+    font-size: 3.2rem;
+  }
 }
 
 /*!
@@ -4234,6 +4241,7 @@ h2 {
 @media screen and (max-width: 767px) {
   .header__language {
     padding-right: rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -4263,7 +4271,7 @@ h2 {
 @media screen and (max-width: 767px) {
   .header__logo {
     width: 120px;
-    top: 70px;
+    top: 50%;
     left: 3rem;
   }
 }
@@ -4302,15 +4310,16 @@ h2 {
   .navigation__list.active {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
+    padding-right: 2rem;
     gap: 1rem;
     background-color: #fff;
     height: auto;
     left: 0;
     padding-bottom: 2rem;
-    padding-top: 6rem;
+    padding-top: 2rem;
     position: absolute;
-    top: 13rem;
+    top: 10rem;
     width: 100%;
   }
 }
@@ -4371,10 +4380,11 @@ h2 {
 
 .introduction {
   background-color: #f6f6f6;
-  padding: 9.5rem 6rem 23rem 6rem;
+  padding: 14rem 6rem 23rem 6rem;
 }
 @media (max-width: 767px) {
   .introduction {
+    padding-top: 10rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 2rem;
@@ -4385,11 +4395,18 @@ h2 {
   font-weight: 700;
 }
 
-.introduction__paragraph {
-  border: 1px solid green;
-  margin: 0;
-}
-
 .row {
   border: 1px solid blue;
+}
+
+.more-info {
+  padding-top: 3rem;
+  padding-bottom: 6.5rem;
+  padding-left: 6rem;
+  border: 1px solid red;
+}
+@media (max-width: 767px) {
+  .more-info {
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,24 +1,17 @@
 .introduction {
   background-color: $lorem-light-gray;
-  padding: 9.5rem 6rem 23rem 6rem;
-  // border: 1px solid red;
+  padding: 14rem 6rem 23rem 6rem;
 
   @media (max-width: 767px) {
+    padding-top: 10rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 2rem;
   }
-  // padding-bottom: 23rem;
-  // padding-left: 6rem;
 }
 
 .txt-accent {
   font-weight: 700;
-}
-
-.introduction__paragraph {
-  border: 1px solid green;
-  margin: 0;
 }
 
 .row {

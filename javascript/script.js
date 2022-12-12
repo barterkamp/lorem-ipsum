@@ -18,7 +18,7 @@ navLink.forEach((link) => {
   }
 });
 
-// expands or collapses the hamburger menu 
+// expands or collapses the hamburger menu
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");

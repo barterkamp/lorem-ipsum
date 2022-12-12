@@ -33,15 +33,16 @@
     &.active {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: end;
+      padding-right: 2rem;
       gap: 1rem;
       background-color: #fff;
       height: auto;
       left: 0;
       padding-bottom: 2rem;
-      padding-top: 6rem;
+      padding-top: 2rem;
       position: absolute;
-      top: 13rem;
+      top: 10rem;
       width: 100%;
     }
   }

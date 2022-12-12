@@ -1,0 +1,11 @@
+.more-info {
+  padding-top: 3rem;
+  padding-bottom: 6.5rem;
+  padding-left: 6rem;
+  border: 1px solid red;
+
+  @media (max-width: 767px) {
+    padding: 2rem;
+  }
+}
+

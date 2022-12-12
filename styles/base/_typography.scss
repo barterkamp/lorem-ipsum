@@ -43,6 +43,7 @@ p {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 25px;
+  margin: 0;
 }
 
 h1,
@@ -53,6 +54,8 @@ h2 {
   margin-top: 0;
   margin-bottom: 2rem;
   line-height: 44px;
+
+  @media (max-width: 767px) {
+    font-size: 3.2rem;
+  }
 }
-
-
