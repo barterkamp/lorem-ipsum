@@ -1,13 +1,11 @@
-.more-info {
+.description {
   padding-top: 3rem;
   padding-bottom: 6.5rem;
   padding-left: 6rem;
   padding-right: 6rem;
   border: 1px solid red;
-  background-color: $lorem-light-gray;
 
   @media (max-width: 767px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
   }
 }

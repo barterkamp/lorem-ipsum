@@ -85,23 +85,35 @@ p {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 25px;
-  margin: 0;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 44px;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 32px;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2.4rem;
+  }
 }
 
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 4rem;
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 2rem;
-  line-height: 44px;
-}
-@media (max-width: 767px) {
-  h1,
-h2 {
-    font-size: 3.2rem;
-  }
 }
 
 .btn {
@@ -4253,6 +4265,11 @@ h2 {
   margin-top: 3rem;
   padding-right: 2rem;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    padding-bottom: 2rem;
+  }
+}
 
 .header__language {
   display: flex;
@@ -4423,10 +4440,26 @@ h2 {
   padding-top: 3rem;
   padding-bottom: 6.5rem;
   padding-left: 6rem;
+  padding-right: 6rem;
   border: 1px solid red;
+  background-color: #f6f6f6;
 }
 @media (max-width: 767px) {
   .more-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.description {
+  padding-top: 3rem;
+  padding-bottom: 6.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border: 1px solid red;
+}
+@media (max-width: 767px) {
+  .description {
     padding: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
