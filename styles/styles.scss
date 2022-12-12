@@ -1,7 +1,15 @@
+// base styling
 @import "./base/reset";
 @import "./base/colors";
 @import "./base/typography";
+
+// components
+@import "./components/button";
+
+// bootstrap grid system
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// layout
 @import "./layout/header";
 @import "./layout/navigation";
 @import "./layout/introduction";

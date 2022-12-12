@@ -81,7 +81,7 @@ h6 {
   font-display: swap;
 }
 p {
-  font-family: "OpenSans", Fallback, sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 25px;
@@ -90,7 +90,7 @@ p {
 
 h1,
 h2 {
-  font-family: "Raleway", Fallback, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 4rem;
   font-weight: 200;
   margin-top: 0;
@@ -102,6 +102,28 @@ h2 {
 h2 {
     font-size: 3.2rem;
   }
+}
+
+.btn {
+  color: #fff;
+  background-color: #00b6e8;
+  border: none;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  box-shadow: 4px 4px #cccccc;
+  transition: background-color 0.2s linear;
+}
+@media (max-width: 767px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+.btn:hover {
+  background-color: #06c7fc;
 }
 
 /*!
@@ -4384,10 +4406,8 @@ h2 {
 }
 @media (max-width: 767px) {
   .introduction {
-    padding-top: 10rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 2rem;
   }
 }
 

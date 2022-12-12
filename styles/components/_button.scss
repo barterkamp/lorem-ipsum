@@ -1,0 +1,21 @@
+.btn {
+  color: #fff;
+  background-color: $lorem-blue;
+  border: none;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  box-shadow: 4px 4px $lorem-medium-gray;
+  transition: background-color 0.2s linear;
+
+  @media (max-width: 767px) {
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    background-color: #06c7fc;
+  }
+}
