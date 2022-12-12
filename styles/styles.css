@@ -4222,6 +4222,7 @@ h2 {
   border: 1px solid red;
   position: relative;
   margin-top: 3rem;
+  padding: 0;
 }
 
 .header__language {
@@ -4254,7 +4255,7 @@ h2 {
   width: 200px;
   border: 2px solid #f6f6f6;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 744px) {
   .header__logo {
     width: 100px;
     top: 70px;
@@ -4270,7 +4271,7 @@ h2 {
 @media (min-width: 320px) and (max-width: 668px) {
   .navigation {
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 2.2rem;
     align-items: flex-end;
   }
 }
@@ -4289,13 +4290,16 @@ h2 {
 @media (min-width: 320px) and (max-width: 668px) {
   .navigation__list {
     display: none;
+    font-size: 1.3rem;
   }
   .navigation__list.active {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0;
     gap: 2rem;
-    transition: all 0.3s ease-in-out;
+    border: 1px solid green;
   }
 }
 
@@ -4316,13 +4320,14 @@ h2 {
 }
 
 .navigation__hamburger {
+  border: none;
+  background-color: transparent;
   display: none;
   cursor: pointer;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 743px) {
   .navigation__hamburger {
     display: block;
-    transition: all 0.3s ease-in-out;
   }
 }
 .navigation__hamburger.active .navigation__bar:nth-child(2) {
@@ -4340,6 +4345,10 @@ h2 {
   display: block;
   height: 2px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
   width: 24px;
+}
+
+.navigation__text {
+  font-size: 1rem;
+  font-family: "OpenSans";
 }/*# sourceMappingURL=styles.css.map */

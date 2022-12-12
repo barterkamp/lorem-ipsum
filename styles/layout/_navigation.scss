@@ -5,7 +5,7 @@
 
   @media (min-width: 320px) and (max-width: 668px) {
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 2.2rem;
     align-items: flex-end;
     // border: 1px solid red;
     // transition: 0.7s;
@@ -23,17 +23,20 @@
   font-weight: 700;
   font-size: 1.6rem;
   margin: 0;
- 
 
   @media (min-width: 320px) and (max-width: 668px) {
     display: none;
-    
+    font-size: 1.3rem;
+
     &.active {
       display: flex;
       flex-direction: column;
-      text-align: center;
+      gap: 0.5rem;
+      width: 100%;
+      margin: 0;
       gap: 2rem;
-      transition: all 0.3s ease-in-out;
+      border: 1px solid green;
+      
     }
   }
 }
@@ -56,12 +59,13 @@
 }
 
 .navigation__hamburger {
+  border: none;
+  background-color: transparent;
   display: none;
   cursor: pointer;
 
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     display: block;
-    transition: all 0.3s ease-in-out;
   }
 
   &.active .navigation__bar:nth-child(2) {
@@ -80,6 +84,11 @@
   display: block;
   height: 2px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
   width: 24px;
+}
+
+.navigation__text {
+  font-size: 1rem;
+  font-family: "OpenSans";
 }

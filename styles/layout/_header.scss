@@ -2,6 +2,7 @@
   border: 1px solid red;
   position: relative;
   margin-top: 3rem;
+  padding: 0;
 }
 
 .header__language {
@@ -34,7 +35,7 @@
   width: 200px;
   border: 2px solid $lorem-light-gray;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 744px) {
     width: 100px;
     top: 70px;
     left: 3rem;
