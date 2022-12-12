@@ -1,8 +1,8 @@
 .header {
-  border: 1px solid red;
+  // border: 1px solid red;
   position: relative;
   margin-top: 3rem;
-  padding: 0;
+  padding-right: 2rem;
 }
 
 .header__language {
@@ -10,6 +10,10 @@
   gap: 0.5rem;
   justify-content: end;
   margin-bottom: 7.5rem;
+
+  @media screen and (max-width: 767px) {
+    padding-right: rem;
+  }
 }
 
 .header__input {
@@ -35,8 +39,8 @@
   width: 200px;
   border: 2px solid $lorem-light-gray;
 
-  @media screen and (max-width: 744px) {
-    width: 100px;
+  @media screen and (max-width: 767px) {
+    width: 120px;
     top: 70px;
     left: 3rem;
   }

@@ -3,7 +3,7 @@
   justify-content: end;
   align-items: center;
 
-  @media (min-width: 320px) and (max-width: 668px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     gap: 2.2rem;
     align-items: flex-end;
@@ -14,29 +14,35 @@
 }
 
 .navigation__list {
+  position: relative;
   display: flex;
-  gap: 2rem;
-  justify-content: end;
   align-items: flex-end;
-  list-style: none;
+  gap: 2rem;
   font-family: "OpenSans";
-  font-weight: 700;
   font-size: 1.6rem;
+  font-weight: 700;
+  height: 0;
+  justify-content: end;
+  list-style: none;
   margin: 0;
-
-  @media (min-width: 320px) and (max-width: 668px) {
+  
+  @media (max-width: 767px) {
     display: none;
     font-size: 1.3rem;
 
     &.active {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      align-items: center;
+      gap: 1rem;
+      background-color: #fff;
+      height: auto;
+      left: 0;
+      padding-bottom: 2rem;
+      padding-top: 6rem;
+      position: absolute;
+      top: 13rem;
       width: 100%;
-      margin: 0;
-      gap: 2rem;
-      border: 1px solid green;
-      
     }
   }
 }
@@ -47,7 +53,6 @@
   text-decoration: none;
   color: $lorem-dark-gray;
   cursor: pointer;
-  border: 1px solid green;
   margin: 0;
 
   &:hover,
@@ -55,6 +60,10 @@
     text-decoration: underline 4px solid $lorem-blue;
     text-underline-offset: 1.5rem;
     color: $lorem-blue;
+
+    @media (max-width: 767px) {
+      text-underline-offset: 1rem;
+    }
   }
 }
 
@@ -64,7 +73,7 @@
   display: none;
   cursor: pointer;
 
-  @media (min-width: 320px) and (max-width: 743px) {
+  @media (max-width: 767px) {
     display: block;
   }
 
