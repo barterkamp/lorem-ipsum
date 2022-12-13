@@ -4560,7 +4560,8 @@ h2 {
 }
 @media (max-width: 768px) {
   .copyright__paragraph {
-    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -4569,9 +4570,28 @@ h2 {
 }
 
 .copyright__logo {
-  position: absolute;
-  width: 100px;
-  transform: translate(-50%, -50%);
-  left: 50%;
   border: 2px solid #f6f6f6;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.voorwaarden {
+  margin-top: 3rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .voorwaarden {
+    margin-top: 1rem;
+  }
+}
+
+.voorwaarden__paragraph {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .voorwaarden__paragraph {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
