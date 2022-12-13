@@ -80,6 +80,13 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
+p,
+h1,
+h2,
+a {
+  color: #717274;
+}
+
 p {
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
@@ -114,6 +121,11 @@ h2 {
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+.text-bold {
+  color: #717274;
+  font-weight: 700;
 }
 
 .btn {
@@ -4296,7 +4308,7 @@ h2 {
 #language span {
   padding: 3px;
   text-transform: uppercase;
-  color: #707173;
+  color: #717274;
   cursor: pointer;
 }
 
@@ -4367,7 +4379,7 @@ h2 {
   display: block;
   padding-bottom: 1.3rem;
   text-decoration: none;
-  color: #707173;
+  color: #717274;
   cursor: pointer;
   margin: 0;
 }
@@ -4405,7 +4417,7 @@ h2 {
 }
 
 .navigation__bar {
-  background-color: #707173;
+  background-color: #717274;
   display: block;
   height: 2px;
   margin: 5px auto;
@@ -4462,4 +4474,45 @@ h2 {
   .description {
     padding: 2rem;
   }
+}
+
+.footer__list-wrapper {
+  padding-top: 4.5rem;
+  padding-bottom: 9rem;
+  background-color: #f6f6f6;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding-left: 6rem;
+}
+@media (max-width: 576px) {
+  .footer__list {
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__list-item {
+  font-family: "OpenSans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.footer__link {
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+.footer__link:hover {
+  -webkit-text-decoration: underline 2px solid #00b6e8;
+          text-decoration: underline 2px solid #00b6e8;
+  text-underline-offset: 0.5rem;
+  color: #00b6e8;
 }/*# sourceMappingURL=styles.css.map */

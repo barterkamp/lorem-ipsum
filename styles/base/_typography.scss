@@ -38,6 +38,13 @@
   font-display: swap;
 }
 
+p,
+h1,
+h2,
+a {
+  color: $lorem-dark-gray;
+}
+
 p {
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
@@ -70,4 +77,9 @@ h2 {
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+.text-bold {
+  color: $lorem-dark-gray;
+  font-weight: 700;
 }
