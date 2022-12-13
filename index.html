@@ -13,26 +13,26 @@
   </head>
   <body>
     <header class="container header">
-      <!-- language -->
+      <!-- language toggle-->
       <div class="header__language">
-        <p id="language" class="header__input">
-          <label
-            ><input type="checkbox" name="language" value="1" /><span
-              >NL</span
-            ></label
-          >
-          <label
-            ><input type="checkbox" name="language" value="2" /><span
-              >EN</span
-            ></label
-          >
-        </p>
+        <button type="button" class="btn btn--small active">NL</button>
+        <button type="button" class="btn btn--small">EN</button>
+      </div>
+
+      <!-- Logo container -->
+      <div class="header__logo">
+        <img
+          class="logo-image"
+          src="./assets/images/lorem-logo-small.png"
+          alt="company logo"
+        />
       </div>
 
       <!-- navigation -->
       <nav class="navigation">
         <!-- start of hamburger button -->
         <button
+          type="button"
           class="navigation__hamburger"
           aria-label="Menu"
           aria-expanded="false"
@@ -74,15 +74,6 @@
           </li>
         </ul>
       </nav>
-
-      <!-- Logo container -->
-      <div class="header__logo">
-        <img
-          class="logo-image"
-          src="./assets/images/lorem-logo-small.png"
-          alt="company logo"
-        />
-      </div>
     </header>
     <main>
       <section class="introduction container">
@@ -92,7 +83,6 @@
           </h1>
         </div>
         <div class="row">
-          <!-- van < 576 tot 992px - 100% alles daarboven  verspreiden over 8 columns  -->
           <p class="col col-lg-7">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
             velit, est nihil delectus quis porro amet consequuntur tempora. Unde
@@ -110,8 +100,41 @@
 
       <!-- start van gallery section -->
       <section class="gallery container">
-        <button class="btn btn-primary">meer projecten tonen</button>
+        <div class="gallery__grid">
+          <div class="gallery__image image-1">
+            <img src="./assets/images/kitchen-1.jpg" alt="" />
+          </div>
+
+          <div class="gallery__image image-2">
+            <img src="./assets/images/kitchen-2.jpg" alt="" />
+          </div>
+
+          <!-- second row -->
+
+          <div class="gallery__image image-1">
+            <img src="./assets/images/kitchen-3.jpg" alt="" />
+          </div>
+
+          <div class="gallery__image image-2">
+            <img src="./assets/images/kitchen-4.jpg" alt="" />
+          </div>
+
+          <!-- third row -->
+
+          <div class="gallery__image image-1">
+            <img src="./assets/images/kitchen-5.jpg" alt="" />
+          </div>
+
+          <div class="gallery__image image-2">
+            <img src="./assets/images/kitchen-6.jpg" alt="" />
+          </div>
+        </div>
+
+        <button type="button" class="btn btn--large">
+          meer projecten tonen
+        </button>
       </section>
+
       <!-- eind van gallery section -->
 
       <section class="more-info container">

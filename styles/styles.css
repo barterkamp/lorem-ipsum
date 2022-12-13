@@ -129,25 +129,39 @@ h2 {
 }
 
 .btn {
-  color: #fff;
-  background-color: #00b6e8;
   border: none;
+  background-color: transparent;
   font-family: "OpenSans", sans-serif;
-  font-weight: 700;
   font-size: 1.4rem;
   cursor: pointer;
   text-transform: uppercase;
-  padding: 1rem 2rem;
-  box-shadow: 4px 4px #cccccc;
-  transition: background-color 0.2s linear;
 }
 @media (max-width: 767px) {
   .btn {
     font-size: 1.2rem;
   }
 }
-.btn:hover {
+
+.btn--small {
+  padding: 1rem 1rem;
+}
+
+.btn--large {
+  background-color: #00b6e8;
+  box-shadow: 4px 4px #cccccc;
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  transition: background-color 0.2s linear;
+}
+.btn--large:hover {
   background-color: #06c7fc;
+}
+
+.active {
+  background-color: #00b6e8;
+  color: white;
+  font-weight: 700;
 }
 
 /*!
@@ -4285,7 +4299,6 @@ h2 {
 
 .header__language {
   display: flex;
-  gap: 0.5rem;
   justify-content: end;
   margin-bottom: 7.5rem;
 }
@@ -4299,17 +4312,6 @@ h2 {
 .header__input {
   display: flex;
   margin: 0;
-}
-
-#language input[type=checkbox] {
-  display: none;
-}
-
-#language span {
-  padding: 3px;
-  text-transform: uppercase;
-  color: #717274;
-  cursor: pointer;
 }
 
 .header__logo {
@@ -4448,6 +4450,13 @@ h2 {
   border: 1px solid blue;
 }
 
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
 .more-info {
   padding-top: 3rem;
   padding-bottom: 6.5rem;
@@ -4465,7 +4474,7 @@ h2 {
 
 .description {
   padding-top: 3rem;
-  padding-bottom: 6.5rem;
+  padding-bottom: 3rem;
   padding-left: 6rem;
   padding-right: 6rem;
   border: 1px solid red;

@@ -7,12 +7,11 @@
   @media screen and (max-width: 767px) {
     padding-bottom: 2rem;
   }
-
 }
 
 .header__language {
   display: flex;
-  gap: 0.5rem;
+  // gap: 0.5rem;
   justify-content: end;
   margin-bottom: 7.5rem;
 
@@ -27,16 +26,24 @@
   margin: 0;
 }
 
-#language input[type="checkbox"] {
-  display: none;
-}
+// #language input[type="checkbox"] {
+//   display: none;
+// }
 
-#language span {
-  padding: 3px;
-  text-transform: uppercase;
-  color: $lorem-dark-gray;
-  cursor: pointer;
-}
+// #language span {
+//   padding: 3px;
+//   text-transform: uppercase;
+//   cursor: pointer;
+// }
+
+// #language label {
+//   padding: 0.5rem;
+// }
+
+// .unchecked {
+//   background-color: #fff;
+//   color: $lorem-dark-gray;
+// }
 
 .header__logo {
   position: absolute;
@@ -52,7 +59,6 @@
   }
 }
 
-// #language input[type="checkbox"]:checked + span {
-//   background-color: $lorem-blue;
-//   color: white;
+// label {
+//   padding: 0.5rem;
 // }
