@@ -1,8 +1,7 @@
 .header {
-  // border: 1px solid red;
-  position: relative;
   margin-top: 3rem;
   padding-right: 2rem;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     padding-bottom: 2rem;
@@ -11,13 +10,12 @@
 
 .header__language {
   display: flex;
-  // gap: 0.5rem;
   justify-content: end;
   margin-bottom: 7.5rem;
 
   @media screen and (max-width: 767px) {
-    padding-right: rem;
     margin-bottom: 3.5rem;
+    padding-right: rem;
   }
 }
 
@@ -26,39 +24,17 @@
   margin: 0;
 }
 
-// #language input[type="checkbox"] {
-//   display: none;
-// }
-
-// #language span {
-//   padding: 3px;
-//   text-transform: uppercase;
-//   cursor: pointer;
-// }
-
-// #language label {
-//   padding: 0.5rem;
-// }
-
-// .unchecked {
-//   background-color: #fff;
-//   color: $lorem-dark-gray;
-// }
-
 .header__logo {
+  border: 2px solid $lorem-light-gray;
+  left: 4rem;
   position: absolute;
   top: 0;
-  left: 4rem;
   width: 200px;
-  border: 2px solid $lorem-light-gray;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
-    width: 120px;
-    top: 50%;
     left: 3rem;
+    top: 50%;
+    width: 120px;
   }
 }
-
-// label {
-//   padding: 0.5rem;
-// }

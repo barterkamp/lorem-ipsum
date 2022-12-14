@@ -4287,9 +4287,9 @@ h2 {
   }
 }
 .header {
-  position: relative;
   margin-top: 3rem;
   padding-right: 2rem;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -4304,8 +4304,8 @@ h2 {
 }
 @media screen and (max-width: 767px) {
   .header__language {
-    padding-right: rem;
     margin-bottom: 3.5rem;
+    padding-right: rem;
   }
 }
 
@@ -4315,17 +4315,18 @@ h2 {
 }
 
 .header__logo {
+  border: 2px solid #f6f6f6;
+  left: 4rem;
   position: absolute;
   top: 0;
-  left: 4rem;
   width: 200px;
-  border: 2px solid #f6f6f6;
+  z-index: 2;
 }
 @media screen and (max-width: 767px) {
   .header__logo {
-    width: 120px;
-    top: 50%;
     left: 3rem;
+    top: 50%;
+    width: 120px;
   }
 }
 
@@ -4358,19 +4359,18 @@ h2 {
 @media (max-width: 767px) {
   .navigation__list {
     display: none;
-    font-size: 1.3rem;
   }
   .navigation__list.active {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    padding-right: 2rem;
+    align-items: center;
     gap: 1rem;
     background-color: #fff;
     height: auto;
     left: 0;
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-top: 10rem;
     position: absolute;
     top: 10rem;
     width: 100%;
@@ -4378,18 +4378,18 @@ h2 {
 }
 
 .navigation__link {
-  display: block;
-  padding-bottom: 1.3rem;
-  text-decoration: none;
   color: #717274;
   cursor: pointer;
+  display: block;
   margin: 0;
+  padding-bottom: 1.3rem;
+  text-decoration: none;
 }
 .navigation__link:hover, .navigation__link[aria-current=page] {
+  color: #00b6e8;
   -webkit-text-decoration: underline 4px solid #00b6e8;
           text-decoration: underline 4px solid #00b6e8;
   text-underline-offset: 1.5rem;
-  color: #00b6e8;
 }
 @media (max-width: 767px) {
   .navigation__link:hover, .navigation__link[aria-current=page] {
@@ -4398,10 +4398,10 @@ h2 {
 }
 
 .navigation__hamburger {
-  border: none;
   background-color: transparent;
-  display: none;
+  border: none;
   cursor: pointer;
+  display: none;
 }
 @media (max-width: 767px) {
   .navigation__hamburger {
@@ -4446,8 +4446,9 @@ h2 {
   font-weight: 700;
 }
 
-.row {
-  border: 1px solid blue;
+.gallery {
+  position: relative;
+  top: -15rem;
 }
 
 .gallery__grid {
@@ -4456,14 +4457,24 @@ h2 {
   gap: 2rem;
   padding: 0 4rem;
 }
+@media (max-width: 991px) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.load-more {
+  margin-top: 5rem;
+}
 
 .more-info {
-  padding-top: 3rem;
+  background-color: #f6f6f6;
   padding-bottom: 6.5rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  border: 1px solid red;
-  background-color: #f6f6f6;
+  padding-top: 3rem;
+  position: relative;
+  top: -15rem;
 }
 @media (max-width: 767px) {
   .more-info {
@@ -4473,11 +4484,12 @@ h2 {
 }
 
 .description {
-  padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  border: 1px solid red;
+  padding-top: 3rem;
+  position: relative;
+  top: -15rem;
 }
 @media (max-width: 767px) {
   .description {
@@ -4485,10 +4497,15 @@ h2 {
   }
 }
 
+footer {
+  position: relative;
+  top: -15rem;
+}
+
 .footer__list-wrapper {
-  padding-top: 4.5rem;
-  padding-bottom: 9rem;
   background-color: #f6f6f6;
+  padding-bottom: 9rem;
+  padding-top: 4.5rem;
 }
 @media (max-width: 576px) {
   .footer__list-wrapper {
@@ -4525,10 +4542,10 @@ h2 {
   transition: color 0.2s linear;
 }
 .footer__link:hover {
+  color: #00b6e8;
   -webkit-text-decoration: underline 2px solid #00b6e8;
           text-decoration: underline 2px solid #00b6e8;
   text-underline-offset: 0.5rem;
-  color: #00b6e8;
 }
 
 .copyright {
@@ -4538,7 +4555,6 @@ h2 {
 .copyright__wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  border: 1px solid red;
 }
 
 .grid-item-1 {
@@ -4548,8 +4564,8 @@ h2 {
 @media (max-width: 768px) {
   .grid-item-1 {
     grid-column: 1/-1;
-    text-align: center;
     padding-top: 6rem;
+    text-align: center;
   }
 }
 
@@ -4569,8 +4585,8 @@ h2 {
 }
 @media (max-width: 768px) {
   .copyright__paragraph {
-    margin-bottom: 0.5rem;
     font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 }
 

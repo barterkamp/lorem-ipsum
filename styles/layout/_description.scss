@@ -1,10 +1,11 @@
 .description {
-  padding-top: 3rem;
   padding-bottom: 3rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  border: 1px solid red;
-
+  padding-top: 3rem;
+  position: relative;
+  top: -15rem;
+  
   @media (max-width: 767px) {
     padding: 2rem;
   }
