@@ -5,8 +5,12 @@
   padding-top: 3rem;
   position: relative;
   top: -15rem;
-  
+
   @media (max-width: 767px) {
     padding: 2rem;
   }
+}
+
+.description__link {
+  color: $lorem-red;
 }

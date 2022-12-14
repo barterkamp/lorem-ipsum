@@ -4464,7 +4464,8 @@ h2 {
 }
 
 .load-more {
-  margin-top: 5rem;
+  margin: 5rem 0rem;
+  text-align: center;
 }
 
 .more-info {
@@ -4495,6 +4496,10 @@ h2 {
   .description {
     padding: 2rem;
   }
+}
+
+.description__link {
+  color: #e8332e;
 }
 
 footer {
