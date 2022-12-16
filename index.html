@@ -9,7 +9,7 @@
     <script src="./javascript/script.js" defer></script>
     <script src="./javascript/alpine.js" defer></script>
 
-    <title>Lorem Ipsum</title>
+    <title>Lorem Ipsum One Page</title>
   </head>
   <body>
     <div class="wrapper">
@@ -102,7 +102,7 @@
           <div class="gallery__grid">
             <!-- first row -->
 
-            <div class="gallery__image image-1">
+            <div class="gallery__image image-1 show-modal">
               <img src="./assets/images/kitchen-1.jpg" alt="" />
               <div class="overlay"></div>
               <div class="overlay-text">
@@ -110,26 +110,54 @@
                 <img src="./assets/images/play-icon.png" alt="" />
               </div>
             </div>
-            <div class="gallery__image image-2">
+
+            <div class="gallery__image image-2 show-modal">
               <img src="./assets/images/kitchen-2.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="overlay-text">
+                <p class="overlay-title">Ultimate Design</p>
+                <img src="./assets/images/play-icon.png" alt="" />
+              </div>
             </div>
 
             <!-- second row -->
 
-            <div class="gallery__image image-1">
+            <div class="gallery__image image-3 show-modal">
               <img src="./assets/images/kitchen-3.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="overlay-text">
+                <p class="overlay-title">Ultimate Design</p>
+                <img src="./assets/images/play-icon.png" alt="" />
+              </div>
             </div>
-            <div class="gallery__image image-2">
+
+            <div class="gallery__image image-4 show-modal">
               <img src="./assets/images/kitchen-4.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="overlay-text">
+                <p class="overlay-title">Ultimate Design</p>
+                <img src="./assets/images/play-icon.png" alt="" />
+              </div>
             </div>
 
             <!-- third row -->
 
-            <div class="gallery__image image-1">
+            <div class="gallery__image image-5 show-modal">
               <img src="./assets/images/kitchen-5.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="overlay-text">
+                <p class="overlay-title">Ultimate Design</p>
+                <img src="./assets/images/play-icon.png" alt="" />
+              </div>
             </div>
-            <div class="gallery__image image-2">
+
+            <div class="gallery__image image-6 show-modal">
               <img src="./assets/images/kitchen-6.jpg" alt="" />
+              <div class="overlay"></div>
+              <div class="overlay-text">
+                <p class="overlay-title">Ultimate Design</p>
+                <img src="./assets/images/play-icon.png" alt="" />
+              </div>
             </div>
           </div>
 
@@ -141,6 +169,8 @@
         </section>
 
         <!-- eind van gallery section -->
+
+        <!-- modal -->
 
         <section class="more-info container">
           <div class="row">
@@ -288,6 +318,14 @@
           </p>
         </section>
       </footer>
+
+      <!-- beginning of modal -->
     </div>
+    <div class="modal hidden">
+      <button class="btn btn--close">&times;</button>
+      <img src="./assets/images/modal.webp" alt="" />
+    </div>
+    <div class="modal__overlay hidden"></div>
+    <!-- end of modal -->
   </body>
 </html>

@@ -158,10 +158,51 @@ h2 {
   background-color: #06c7fc;
 }
 
+.btn--close {
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 .active {
   background-color: #00b6e8;
   color: white;
   font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  background-color: #fff;
+  padding: 4rem;
+  z-index: 10;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 /*!
@@ -4288,7 +4329,7 @@ h2 {
 }
 .header {
   margin-top: 3rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -4320,7 +4361,7 @@ h2 {
   position: absolute;
   top: 0;
   width: 200px;
-  z-index: 2;
+  z-index: 1;
 }
 @media screen and (max-width: 767px) {
   .header__logo {
@@ -4465,6 +4506,7 @@ h2 {
 
 .gallery__image {
   position: relative;
+  cursor: pointer;
 }
 .gallery__image:hover .overlay {
   opacity: 0.8;

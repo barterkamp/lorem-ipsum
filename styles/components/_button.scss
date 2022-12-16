@@ -28,6 +28,14 @@
   }
 }
 
+.btn--close {
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 .active {
   background-color: $lorem-blue;
   color: white;

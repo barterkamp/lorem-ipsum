@@ -1,6 +1,6 @@
 .header {
   margin-top: 3rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
   position: relative;
 
   @media screen and (max-width: 767px) {
@@ -30,7 +30,7 @@
   position: absolute;
   top: 0;
   width: 200px;
-  z-index: 2;
+  z-index: 1;
 
   @media screen and (max-width: 767px) {
     left: 3rem;

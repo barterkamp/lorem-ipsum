@@ -16,6 +16,7 @@
 
 .gallery__image {
   position: relative;
+  cursor: pointer;
 
   &:hover .overlay {
     opacity: 0.8;
