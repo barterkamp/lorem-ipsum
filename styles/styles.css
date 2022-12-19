@@ -205,6 +205,75 @@ h2 {
   overflow: hidden;
 }
 
+.ribbon {
+  max-width: 15rem;
+  background-color: #00b6e8;
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  transform: skewY(-8deg);
+  border: 1px solid #00b6e8;
+}
+@media (max-width: 576px) {
+  .ribbon {
+    bottom: 2.5rem;
+    right: 1.5rem;
+  }
+}
+
+.ribbon__bottom {
+  position: absolute;
+  border-top: 7px solid transparent;
+  border-right: 57px solid #00b6e8;
+  border-bottom: 11px solid transparent;
+  transform: rotate(10deg);
+}
+@media (max-width: 576px) {
+  .ribbon__bottom {
+    border-top: 5px solid transparent;
+    border-right: 30px solid #00b6e8;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.ribbon__title,
+.ribbon__price {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.ribbon__title {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  padding-bottom: 0;
+  font-family: "OpenSans";
+  display: block;
+  margin-bottom: -1rem;
+}
+@media (max-width: 576px) {
+  .ribbon__title {
+    font-size: 0.7rem;
+  }
+}
+
+.ribbon__price {
+  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0;
+  color: white;
+  font-size: 3rem;
+  font-family: "OpenSans";
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .ribbon__price {
+    font-size: 1.6rem;
+    padding-bottom: 0;
+  }
+}
+
 /*!
  * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -4426,14 +4495,14 @@ h2 {
   padding-bottom: 1.3rem;
   text-decoration: none;
 }
-.navigation__link:hover, .navigation__link[aria-current=page] {
+.navigation__link:hover, .navigation__link.navigation__link--active {
   color: #00b6e8;
   -webkit-text-decoration: underline 4px solid #00b6e8;
           text-decoration: underline 4px solid #00b6e8;
   text-underline-offset: 1.5rem;
 }
 @media (max-width: 767px) {
-  .navigation__link:hover, .navigation__link[aria-current=page] {
+  .navigation__link:hover, .navigation__link.navigation__link--active {
     text-underline-offset: 1rem;
   }
 }

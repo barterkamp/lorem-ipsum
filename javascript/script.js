@@ -24,8 +24,11 @@ btnSmall.forEach((btn) => {
 
 // Set the "aria-current" attribute to show the active link in the navigation
 navLink.forEach((link) => {
+  console.log(link);
+  console.log(link.href);
+  console.log(window.location.href);
   if (link.href === window.location.href) {
-    link.setAttribute("aria-current", "page");
+    link.classList.add("navigation__link--active");
   }
 });
 
@@ -50,6 +53,7 @@ const collapseMenu = () => {
   handleAriaExpanded();
 };
 
+console.log(hamburger);
 hamburger.addEventListener("click", toggleMenu);
 
 navLink.forEach((link) => {
@@ -86,3 +90,6 @@ document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
   else closeModal();
 });
+
+// function getScrollbarWidth() {
+//  window.innerWidth - document.documentElement.clientWidth;

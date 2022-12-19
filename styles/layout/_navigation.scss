@@ -53,7 +53,7 @@
   text-decoration: none;
 
   &:hover,
-  &[aria-current="page"] {
+  &.navigation__link--active {
     color: $lorem-blue;
     text-decoration: underline 4px solid $lorem-blue;
     text-underline-offset: 1.5rem;
