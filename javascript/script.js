@@ -8,6 +8,7 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".modal__overlay");
 const btnCloseModal = document.querySelector(".btn--close");
 const showModal = document.querySelectorAll(".show-modal");
+const gallery = document.querySelector(".gallery");
 const body = document.querySelector("body");
 
 console.log(document.activeElement);
@@ -62,7 +63,10 @@ navLink.forEach((link) => {
 // Modal functionality
 
 const openModal = (e) => {
-  console.log(e.target);
+  const clicked = e.target.closest(".gallery__image");
+  if (!clicked) {
+    return;
+  }
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
   body.classList.add("modal-open");
@@ -74,9 +78,10 @@ const closeModal = () => {
   body.classList.remove("modal-open");
 };
 
-showModal.forEach((modal) => {
-  modal.addEventListener("click", openModal);
-});
+// showModal.forEach((modal) => {
+gallery.addEventListener("click", openModal);
+//   console.log(parent);
+// });
 
 // close modal with close button
 btnCloseModal.addEventListener("click", closeModal);

@@ -160,6 +160,9 @@ h2 {
 }
 
 .btn--close {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0 1rem;
   font-size: 3rem;
   font-weight: 700;
   position: absolute;
@@ -180,12 +183,16 @@ h2 {
 .modal {
   background-color: #fff;
   left: 50%;
-  padding: 4rem;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
   width: auto;
   z-index: 10;
+}
+@media (max-width: 767px) {
+  .modal {
+    padding: 0;
+  }
 }
 
 .modal__overlay {

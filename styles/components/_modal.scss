@@ -5,12 +5,15 @@
 .modal {
   background-color: #fff;
   left: 50%;
-  padding: 4rem;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
   width: auto;
   z-index: 10;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }
 
 .modal__overlay {
