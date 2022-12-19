@@ -4601,6 +4601,7 @@ h2 {
 @media (max-width: 991px) {
   .gallery__grid {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 
