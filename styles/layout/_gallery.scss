@@ -15,19 +15,22 @@
 }
 
 .gallery__image {
+  border: 0;
+
   position: relative;
   cursor: pointer;
+  padding: 0;
 
-  &:hover .overlay {
+  &:hover .gallery__overlay {
     opacity: 0.8;
   }
 
-  &:hover .overlay-text {
+  &:hover .gallery__overlay-text {
     opacity: 1;
   }
 }
 
-.overlay {
+.gallery__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -40,7 +43,7 @@
   background-color: $lorem-red;
 }
 
-.overlay-text {
+.gallery__overlay-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +59,13 @@
   transition: 0.5s ease;
 }
 
-.overlay-title {
+.gallery__overlay-title {
   color: white;
   font-size: 3rem;
+
+  @media (max-width: 1400px) {
+    font-size: 2rem;
+  }
 }
 
 .load-more {

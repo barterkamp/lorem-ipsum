@@ -1,11 +1,11 @@
 .ribbon {
-  max-width: 15rem;
   background-color: $lorem-blue;
-  position: absolute;
+  border: 1px solid $lorem-blue;
   bottom: 4rem;
+  max-width: 15rem;
+  position: absolute;
   right: 2rem;
   transform: skewY(-8deg);
-  border: 1px solid $lorem-blue;
 
   @media (max-width: 576px) {
     bottom: 2.5rem;
@@ -14,52 +14,56 @@
 }
 
 .ribbon__bottom {
-  position: absolute;
-  border-top: 7px solid transparent;
-  border-right: 57px solid $lorem-blue;
   border-bottom: 11px solid transparent;
+  border-right: 57px solid $lorem-blue;
+  border-top: 7px solid transparent;
+  position: absolute;
   transform: rotate(10deg);
+  left: 0;
 
   @media (max-width: 576px) {
-    border-top: 5px solid transparent;
-    border-right: 30px solid $lorem-blue;
     border-bottom: 5px solid transparent;
+    border-right: 30px solid $lorem-blue;
+    border-top: 5px solid transparent;
   }
 }
 
 .ribbon__title,
 .ribbon__price {
-  margin: 0;
   color: white;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .ribbon__title {
-  padding-left: 0.5rem;
-  font-size: 1rem;
-  padding-bottom: 0;
+  text-align: left;
   font-family: "OpenSans";
-  display: block;
-  margin-bottom: -1rem;
+  font-size: 1rem;
+  margin-bottom: -0.5rem;
+  margin-top: -0.3rem;
+  padding-left: 0.5rem;
+
 
   @media (max-width: 576px) {
     font-size: 0.7rem;
+    margin-top: -0.5rem;
+    margin-bottom: -1.3rem;
+    padding-left: 0.5rem;
   }
 }
 
 .ribbon__price {
-  display: block;
+  color: white;
+  font-family: "OpenSans";
+  font-size: 3rem;
+  font-weight: 700;
   padding-left: 2rem;
   padding-right: 2rem;
-  // padding-bottom: 1rem;
-  padding-top: 0;
-  color: white;
-  font-size: 3rem;
-  font-family: "OpenSans";
-  font-weight: 700;
+  padding-bottom: 1rem;
 
   @media (max-width: 576px) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding-bottom: 0;
+    padding: 0 0.5rem;
   }
 }

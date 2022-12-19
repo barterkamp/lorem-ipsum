@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,351 +11,347 @@
     <title>Lorem Ipsum One Page</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="container header">
-        <!-- language toggle-->
-        <div class="header__language">
-          <button type="button" class="btn btn--small active">NL</button>
-          <button type="button" class="btn btn--small">EN</button>
+    <header class="container header">
+      <!-- language toggle-->
+      <div class="header__language">
+        <button type="button" class="btn btn--small btn--active">NL</button>
+        <button type="button" class="btn btn--small">EN</button>
+      </div>
+      <!-- Logo -->
+      <div class="header__logo">
+        <img
+          class="logo-image"
+          src="./assets/images/lorem-logo-small.png"
+          alt="company logo"
+        />
+      </div>
+      <!-- Navigation -->
+      <nav class="navigation">
+        <button
+          type="button"
+          class="navigation__hamburger"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-hidden="true"
+        >
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+        </button>
+
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link" href="/">Homepage</a>
+          </li>
+          <li class="navigation__list-item">
+            <a
+              class="navigation__link"
+              href="https://www.maxserv.com/over-maxserv/ons-team"
+              target="_blank"
+              >Over ons</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a
+              class="navigation__link"
+              href="https://www.maxserv.com/producten"
+              target="_blank"
+              >Projecten</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a
+              class="navigation__link"
+              href="https://www.maxserv.com/contact"
+              target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container bg-gray padding-large">
+        <div class="row">
+          <h1 class="col">
+            Ontdek al <span class="txt-accent">onze projecten</span>
+          </h1>
+        </div>
+        <div class="row">
+          <p class="col col-xl-8">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+            velit, est nihil delectus quis porro amet consequuntur tempora. Unde
+            dolore illo possimus culpa optio, numquam commodi! Corporis
+            molestias voluptates aspernatur ullam iusto rem eaque dolore autem
+            obcaecati laborum tempora ad necessitatibus et architecto eius
+            optio, commodi placeat? Blanditiis sunt saepe similique sint et
+            laudantium debitis ullam. Nesciunt laboriosam assumenda vitae
+            corporis debitis, non, laudantium voluptatum esse corrupti deleniti
+            perferendis consequuntur magni nisi aperiam eveniet tempora id ipsa!
+            Reprehenderit, beatae amet.
+          </p>
+        </div>
+      </section>
+      <!-- photo gallery -->
+      <div class="gallery container">
+        <div class="gallery__grid">
+          <div class="gallery__image image-1 show-modal" tabindex="0">
+            <img
+              src="./assets/images/kitchen-1.jpg"
+              alt="Vooraanzicht van een keuken in landelijke stijl met grijze keukenkastjes aan de onderzijde en witte keukenkastjes aan de muur. De keuken heeft een centraal gelegen kookeiland met wit marmeren keukenblad"
+            />
+            <div class="gallery__overlay"></div>
+            <div class="gallery__overlay-text">
+              <p class="gallery__overlay-title">Ultimate Design</p>
+              <img src="./assets/images/play-icon.png" alt="" />
+            </div>
+
+            <div class="ribbon">
+              <p class="ribbon__title">prijs</p>
+              <p class="ribbon__price">19.250,-</p>
+              <span class="ribbon__bottom"></span>
+            </div>
+          </div>
+
+          <div class="gallery__image image-2 show-modal" tabindex="0">
+            <img
+              src="./assets/images/kitchen-2.jpg"
+              alt="Vooraanzicht van een keuken in landelijke stijl met witte keukenkastjes aan de onder -en bovenzijde. De keukenkastjes aan de bovenzijde bevatten oranje lichttinten. Centraal gelegen staat een grijs kookeiland met wit aanrechtblad"
+            />
+            <div class="gallery__overlay"></div>
+            <div class="gallery__overlay-text">
+              <p class="gallery__overlay-title">Ultimate Design</p>
+              <img src="./assets/images/play-icon.png" alt="" />
+            </div>
+
+            <div class="ribbon">
+              <p class="ribbon__title">prijs</p>
+              <p class="ribbon__price">12.000,-</p>
+              <span class="ribbon__bottom"></span>
+            </div>
+          </div>
+
+          <div class="gallery__image image-3 show-modal" tabindex="0">
+            <img
+              src="./assets/images/kitchen-3.jpg"
+              alt="Een speelse, modere keuken met centraal gelegen kookeiland waarvan de onderzijde is voorzien van een donkerbruine houtlook. Het kookeiland is omlijst met een wit marmeren keukenblad. De witte keukenkastjes aan de muur zijn voorzien van ramen. De spatwand bestaat uit kleine hexagon tgeletjes in de kleur wit."
+            />
+            <div class="gallery__overlay"></div>
+            <div class="gallery__overlay-text">
+              <p class="gallery__overlay-title">Ultimate Design</p>
+              <img src="./assets/images/play-icon.png" alt="" />
+            </div>
+
+            <div class="ribbon">
+              <p class="ribbon__title">prijs</p>
+              <p class="ribbon__price">13.500,-</p>
+              <span class="ribbon__bottom"></span>
+            </div>
+          </div>
+
+          <div class="gallery__image image-4 show-modal" tabindex="0">
+            <img
+              src="./assets/images/kitchen-4.jpg"
+              alt="Een moderne, volledige witte keuken voorzien van gele accenten in de vorm van handgrepen en fornuis knoppen"
+            />
+            <div class="gallery__overlay"></div>
+            <div class="gallery__overlay-text">
+              <p class="gallery__overlay-title">Ultimate Design</p>
+              <img src="./assets/images/play-icon.png" alt="" />
+            </div>
+
+            <div class="ribbon">
+              <p class="ribbon__title">prijs</p>
+              <p class="ribbon__price">15.000,-</p>
+              <span class="ribbon__bottom"></span>
+            </div>
+          </div>
+
+          <div class="gallery__image image-5 show-modal" tabindex="0">
+            <img
+              src="./assets/images/kitchen-5.jpg"
+              alt="Een strakke, moderne keuken met witte keukenkastjes aan de muur een een witte bar. De ondergelegen keukenkastjes en koelkast zijn voorzien van een houtlook."
+            />
+            <div class="gallery__overlay"></div>
+            <div class="gallery__overlay-text">
+              <p class="gallery__overlay-title">Ultimate Design</p>
+              <img src="./assets/images/play-icon.png" alt="" />
+            </div>
+
+            <div class="ribbon">
+              <p class="ribbon__title">prijs</p>
+              <p class="ribbon__price">10.250,-</p>
+              <span class="ribbon__bottom"></span>
+            </div>
+          </div>
+
+          <div class="gallery__image image-6 show-modal" tabindex="0">
+            <img
+              src="./assets/images/kitchen-6.jpg"
+              alt="Een modern, strak keukendesign die volledig is opgebouwd uit grijze en witte onderdelen"
+            />
+            <div class="gallery__overlay"></div>
+            <div class="gallery__overlay-text">
+              <p class="gallery__overlay-title">Ultimate Design</p>
+              <img src="./assets/images/play-icon.png" alt="" />
+            </div>
+
+            <div class="ribbon">
+              <p class="ribbon__title">prijs</p>
+              <p class="ribbon__price">22.500,-</p>
+              <span class="ribbon__bottom"></span>
+            </div>
+          </div>
         </div>
 
-        <!-- Logo -->
-        <div class="header__logo">
-          <img
-            class="logo-image"
-            src="./assets/images/lorem-logo-small.png"
-            alt="company logo"
-          />
-        </div>
-
-        <!-- Navigation -->
-        <nav class="navigation">
-          <button
-            type="button"
-            class="navigation__hamburger"
-            aria-label="Menu"
-            aria-expanded="false"
-            aria-hidden="true"
-          >
-            <span class="navigation__bar"></span>
-            <span class="navigation__bar"></span>
-            <span class="navigation__bar"></span>
+        <div class="load-more container">
+          <button type="button" class="btn btn--large">
+            meer projecten tonen
           </button>
+        </div>
+      </div>
 
-          <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="/">Homepage</a>
+      <section class="container bg-gray padding-small position-r">
+        <div class="row">
+          <h2 class="col">Meer informatie nodig?</h2>
+        </div>
+        <div class="row">
+          <p class="col col-lg-8">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+            velit, est nihil delectus quis porro amet consequuntur tempora. Unde
+            dolore illo possimus culpa optio, numquam commodi! Corporis
+            molestias voluptates aspernatur ullam iusto rem eaque dolore autem
+            obcaecati laborum tempora ad necessitatibus et architecto eius
+            optio, commodi placeat? Blanditiis sunt saepe similique sint et
+            laudantium debitis ullam. Nesciunt laboriosam assumenda vitae
+            corporis debitis, non, laudantium voluptatum esse corrupti deleniti
+            perferendis consequuntur magni nisi aperiam eveniet tempora id ipsa!
+            Reprehenderit, beatae amet.
+          </p>
+        </div>
+      </section>
+
+      <section class="padding-small container position-r">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Het WAUW effect</h2>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              velit, est nihil delectus quis porro amet consequuntur tempora.
+              Unde dolore illo possimus culpa optio, numquam commodi! Corporis
+              molestias voluptates aspernatur ullam iusto rem eaque dolore autem
+              obcaecati laborum tempora ad necessitatibus et architecto eius
+              optio, commodi placeat? Blanditiis sunt saepe similique sint et
+              laudantium debitis ullam. Nesciunt laboriosam assumenda vitae
+              corporis debitis, non, laudantium voluptatum esse corrupti
+              deleniti perferendis consequuntur magni nisi aperiam eveniet
+              tempora id ipsa! Reprehenderit, beatae amet.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2>Snelle en kwaliteitsvolle projecten</h2>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              velit, est nihil delectus quis porro amet consequuntur tempora.
+              Unde dolore illo possimus culpa optio, numquam commodi! Corporis
+              molestias voluptates aspernatur ullam iusto rem eaque dolore autem
+              obcaecati laborum tempora ad necessitatibus et architecto eius
+              optio, commodi placeat? Blanditiis sunt saepe similique sint et
+              laudantium debitis ullam. Nesciunt laboriosam assumenda vitae
+              corporis debitis, non, laudantium voluptatum esse corrupti
+              deleniti perferendis consequuntur magni nisi aperiam eveniet
+              tempora id ipsa! Reprehenderit, beatae amet.
+            </p>
+            <h2>Op zoek naar ideeën voor uw website?</h2>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              velit, est nihil delectus quis porro amet consequuntur tempora.
+              Unde dolore illo possimus culpa optio, numquam commodi! Corporis
+              molestias voluptates aspernatur ullam iusto rem eaque dolore autem
+              obcaecati laborum tempora ad necessitatibus et architecto eius
+              optio,
+              <a href="#" class="text-link">Doe de test</a> commodi placeat?
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="position-r">
+      <div class="container">
+        <div class="footer__wrapper row justify-content-center">
+          <ul class="footer__list col-sm-4 col-lg-3">
+            <li class="footer__list-item">
+              <span class="text-bold">Inspiratie</span>
             </li>
-            <li class="navigation__list-item">
-              <a
-                class="navigation__link"
-                href="https://www.maxserv.com/over-maxserv/ons-team"
-                target="_blank"
-                >Over ons</a
-              >
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Medium</a>
             </li>
-            <li class="navigation__list-item">
-              <a
-                class="navigation__link"
-                href="https://www.maxserv.com/producten"
-                target="_blank"
-                >Projecten</a
-              >
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Designerdepot</a>
             </li>
-            <li class="navigation__list-item">
-              <a
-                class="navigation__link"
-                href="https://www.maxserv.com/contact"
-                target="_blank"
-                >Contact</a
-              >
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Portfolio</a>
             </li>
           </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="introduction container">
-          <div class="row">
-            <h1 class="introduction__header col">
-              Ontdek al <span class="txt-accent">onze projecten</span>
-            </h1>
-          </div>
-          <div class="row">
-            <p class="col col-xl-8">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              velit, est nihil delectus quis porro amet consequuntur tempora.
-              Unde dolore illo possimus culpa optio, numquam commodi! Corporis
-              molestias voluptates aspernatur ullam iusto rem eaque dolore autem
-              obcaecati laborum tempora ad necessitatibus et architecto eius
-              optio, commodi placeat? Blanditiis sunt saepe similique sint et
-              laudantium debitis ullam. Nesciunt laboriosam assumenda vitae
-              corporis debitis, non, laudantium voluptatum esse corrupti
-              deleniti perferendis consequuntur magni nisi aperiam eveniet
-              tempora id ipsa! Reprehenderit, beatae amet.
-            </p>
-          </div>
-        </section>
-
-        <!-- start van gallery section -->
-        <section class="gallery container">
-          <div class="gallery__grid">
-            <!-- first row -->
-
-            <div class="gallery__image image-1 show-modal">
-              <img src="./assets/images/kitchen-1.jpg" alt="" />
-              <div class="overlay"></div>
-              <div class="overlay-text">
-                <p class="overlay-title">Ultimate Design</p>
-                <img src="./assets/images/play-icon.png" alt="" />
-              </div>
-
-              <div class="ribbon">
-                <span class="ribbon__title">prijs</span>
-                <span class="ribbon__price">19.250,-</span>
-                <span class="ribbon__bottom"></span>
-              </div>
-            </div>
-
-            <div class="gallery__image image-2 show-modal">
-              <img src="./assets/images/kitchen-2.jpg" alt="" />
-              <div class="overlay"></div>
-              <div class="overlay-text">
-                <p class="overlay-title">Ultimate Design</p>
-                <img src="./assets/images/play-icon.png" alt="" />
-              </div>
-
-              <div class="ribbon">
-                <span class="ribbon__title">prijs</span>
-                <span class="ribbon__price">12.000,-</span>
-                <span class="ribbon__bottom"></span>
-              </div>
-            </div>
-
-            <!-- second row -->
-
-            <div class="gallery__image image-3 show-modal">
-              <img src="./assets/images/kitchen-3.jpg" alt="" />
-              <div class="overlay"></div>
-              <div class="overlay-text">
-                <p class="overlay-title">Ultimate Design</p>
-                <img src="./assets/images/play-icon.png" alt="" />
-              </div>
-
-              <div class="ribbon">
-                <span class="ribbon__title">prijs</span>
-                <span class="ribbon__price">13.500,-</span>
-                <span class="ribbon__bottom"></span>
-              </div>
-            </div>
-
-            <div class="gallery__image image-4 show-modal">
-              <img src="./assets/images/kitchen-4.jpg" alt="" />
-              <div class="overlay"></div>
-              <div class="overlay-text">
-                <p class="overlay-title">Ultimate Design</p>
-                <img src="./assets/images/play-icon.png" alt="" />
-              </div>
-
-              <div class="ribbon">
-                <span class="ribbon__title">prijs</span>
-                <span class="ribbon__price">15.000,-</span>
-                <span class="ribbon__bottom"></span>
-              </div>
-            </div>
-
-            <!-- third row -->
-
-            <div class="gallery__image image-5 show-modal">
-              <img src="./assets/images/kitchen-5.jpg" alt="" />
-              <div class="overlay"></div>
-              <div class="overlay-text">
-                <p class="overlay-title">Ultimate Design</p>
-                <img src="./assets/images/play-icon.png" alt="" />
-              </div>
-
-              <div class="ribbon">
-                <span class="ribbon__title">prijs</span>
-                <span class="ribbon__price">10.250,-</span>
-                <span class="ribbon__bottom"></span>
-              </div>
-            </div>
-
-            <div class="gallery__image image-6 show-modal">
-              <img src="./assets/images/kitchen-6.jpg" alt="" />
-              <div class="overlay"></div>
-              <div class="overlay-text">
-                <p class="overlay-title">Ultimate Design</p>
-                <img src="./assets/images/play-icon.png" alt="" />
-              </div>
-
-              <div class="ribbon">
-                <span class="ribbon__title">prijs</span>
-                <span class="ribbon__price">22.500,-</span>
-                <span class="ribbon__bottom"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="load-more container">
-            <button type="button" class="btn btn--large">
-              meer projecten tonen
-            </button>
-          </div>
-        </section>
-
-        <!-- eind van gallery section -->
-
-        <!-- modal -->
-
-        <section class="more-info container">
-          <div class="row">
-            <h2 class="col">Meer informatie nodig?</h2>
-          </div>
-          <div class="row">
-            <p class="col col-lg-8">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-              velit, est nihil delectus quis porro amet consequuntur tempora.
-              Unde dolore illo possimus culpa optio, numquam commodi! Corporis
-              molestias voluptates aspernatur ullam iusto rem eaque dolore autem
-              obcaecati laborum tempora ad necessitatibus et architecto eius
-              optio, commodi placeat? Blanditiis sunt saepe similique sint et
-              laudantium debitis ullam. Nesciunt laboriosam assumenda vitae
-              corporis debitis, non, laudantium voluptatum esse corrupti
-              deleniti perferendis consequuntur magni nisi aperiam eveniet
-              tempora id ipsa! Reprehenderit, beatae amet.
-            </p>
-          </div>
-        </section>
-
-        <section class="description container">
-          <div class="row">
-            <div class="col-lg-6">
-              <h2>Het WAUW effect</h2>
-
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                velit, est nihil delectus quis porro amet consequuntur tempora.
-                Unde dolore illo possimus culpa optio, numquam commodi! Corporis
-                molestias voluptates aspernatur ullam iusto rem eaque dolore
-                autem obcaecati laborum tempora ad necessitatibus et architecto
-                eius optio, commodi placeat? Blanditiis sunt saepe similique
-                sint et laudantium debitis ullam. Nesciunt laboriosam assumenda
-                vitae corporis debitis, non, laudantium voluptatum esse corrupti
-                deleniti perferendis consequuntur magni nisi aperiam eveniet
-                tempora id ipsa! Reprehenderit, beatae amet.
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <h2>Snelle en kwaliteitsvolle projecten</h2>
-
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                velit, est nihil delectus quis porro amet consequuntur tempora.
-                Unde dolore illo possimus culpa optio, numquam commodi! Corporis
-                molestias voluptates aspernatur ullam iusto rem eaque dolore
-                autem obcaecati laborum tempora ad necessitatibus et architecto
-                eius optio, commodi placeat? Blanditiis sunt saepe similique
-                sint et laudantium debitis ullam. Nesciunt laboriosam assumenda
-                vitae corporis debitis, non, laudantium voluptatum esse corrupti
-                deleniti perferendis consequuntur magni nisi aperiam eveniet
-                tempora id ipsa! Reprehenderit, beatae amet.
-              </p>
-              <h2>Op zoek naar ideeën voor uw website?</h2>
-
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                velit, est nihil delectus quis porro amet consequuntur tempora.
-                Unde dolore illo possimus culpa optio, numquam commodi! Corporis
-                molestias voluptates aspernatur ullam iusto rem eaque dolore
-                autem obcaecati laborum tempora ad necessitatibus et architecto
-                eius optio,
-                <a href="#" class="description__link">Doe de test</a> commodi
-                placeat?
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <section class="footer__links container">
-          <div class="footer__list-wrapper row justify-content-center">
-            <!-- first list -->
-            <ul class="footer__list col-sm-4 col-lg-3">
-              <li class="footer__list-item">
-                <span class="text-bold">Inspiratie</span>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Medium</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Designerdepot</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Portfolio</a>
-              </li>
-            </ul>
-
-            <!-- second list -->
-            <ul class="footer__list col-sm-4 col-lg-3">
-              <li class="footer__list-item">
-                <span class="text-bold">Service</span>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Over ons</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Contact</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Servicepunten</a>
-              </li>
-            </ul>
-            <!-- third list -->
-            <ul class="footer__list col-sm-4 col-lg-3">
-              <li class="footer__list-item">
-                <span class="text-bold">Informatie</span>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Github</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Atlassian</a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__link">Slack</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="copyright container">
-          <div class="copyright__wrapper">
-            <p class="copyright__paragraph grid-item-1">
-              Copyright &copy; 2018
-            </p>
-            <div class="copyright__logo">
-              <img
-                src="./assets/images/lorem-logo-small.png"
-                alt="company logo"
-              />
-            </div>
-            <p class="copyright__paragraph grid-item-2">
-              Alle rechten voorbehouden
-            </p>
-          </div>
-        </section>
-
-        <section class="voorwaarden container">
-          <p class="voorwaarden__paragraph">
-            <a class="footer__link" href="#">Voorwaarden</a> |
-            <a class="footer__link" href="#">Sitemap</a> |
-            <a class="footer__link" href="#">Afmelden</a>
+          <ul class="footer__list col-sm-4 col-lg-3">
+            <li class="footer__list-item">
+              <span class="text-bold">Service</span>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Over ons</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Servicepunten</a>
+            </li>
+          </ul>
+          <ul class="footer__list col-sm-4 col-lg-3">
+            <li class="footer__list-item">
+              <span class="text-bold">Informatie</span>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Github</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Atlassian</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Slack</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright container">
+        <div class="footer__copyright-wrapper">
+          <p class="footer__copyright-paragraph grid-item-1">
+            Copyright &copy; 2018
           </p>
-        </section>
-      </footer>
+          <div class="footer__copyright-logo">
+            <img
+              src="./assets/images/lorem-logo-small.png"
+              alt="company logo"
+            />
+          </div>
+          <p class="footer__copyright-paragraph grid-item-2">
+            Alle rechten voorbehouden
+          </p>
+        </div>
+      </div>
+      <div class="footer__terms container">
+        <p class="footer__terms-paragraph">
+          <a class="footer__link" href="#">Voorwaarden</a> |
+          <a class="footer__link" href="#">Sitemap</a> |
+          <a class="footer__link" href="#">Afmelden</a>
+        </p>
+      </div>
+    </footer>
 
-      <!-- beginning of modal -->
-    </div>
+    <!-- beginning of modal -->
     <div class="modal hidden">
       <button class="btn btn--close">&times;</button>
       <img src="./assets/images/modal.webp" alt="" />

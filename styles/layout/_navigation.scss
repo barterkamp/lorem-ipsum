@@ -29,7 +29,7 @@
     &.active {
       display: flex;
       flex-direction: column;
-      align-items: center; 
+      align-items: center;
       gap: 1rem;
       background-color: #fff;
       height: auto;
@@ -55,7 +55,10 @@
   &:hover,
   &.navigation__link--active {
     color: $lorem-blue;
-    text-decoration: underline 4px solid $lorem-blue;
+    text-decoration-color: $lorem-blue;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
     text-underline-offset: 1.5rem;
 
     @media (max-width: 767px) {

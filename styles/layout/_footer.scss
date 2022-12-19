@@ -1,9 +1,4 @@
-footer {
-  position: relative;
-  top: -15rem;
-}
-
-.footer__list-wrapper {
+.footer__wrapper {
   background-color: $lorem-light-gray;
   padding-bottom: 9rem;
   padding-top: 4.5rem;
@@ -42,16 +37,20 @@ footer {
 
   &:hover {
     color: $lorem-blue;
-    text-decoration: underline 2px solid $lorem-blue;
+    color: $lorem-blue;
+    text-decoration-color: $lorem-blue;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
     text-underline-offset: 0.5rem;
   }
 }
 
-.copyright {
+.footer__copyright {
   position: relative;
 }
 
-.copyright__wrapper {
+.footer__copyright-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -76,7 +75,7 @@ footer {
   }
 }
 
-.copyright__paragraph {
+.footer__copyright-paragraph {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 
@@ -86,11 +85,11 @@ footer {
   }
 }
 
-.copyright__txt {
+.footer__copyright-txt {
   text-align: right;
 }
 
-.copyright__logo {
+.footer__copyright-logo {
   border: 2px solid $lorem-light-gray;
   left: 50%;
   position: absolute;
@@ -98,7 +97,7 @@ footer {
   width: 100px;
 }
 
-.voorwaarden {
+.footer__terms {
   margin-top: 3rem;
   text-align: center;
 
@@ -107,7 +106,7 @@ footer {
   }
 }
 
-.voorwaarden__paragraph {
+.footer__terms-paragraph {
   margin: 0;
 
   @media (max-width: 768px) {

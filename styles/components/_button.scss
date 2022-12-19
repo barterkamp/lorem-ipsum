@@ -1,9 +1,9 @@
 .btn {
-  border: none;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
   font-family: "OpenSans", sans-serif;
   font-size: 1.4rem;
-  cursor: pointer;
   text-transform: uppercase;
 
   @media (max-width: 767px) {
@@ -19,12 +19,13 @@
   background-color: $lorem-blue;
   box-shadow: 4px 4px $lorem-medium-gray;
   color: #fff;
+  font-family: "OpenSans", sans-serif;
   font-weight: 700;
   padding: 1rem 2rem;
   transition: background-color 0.2s linear;
 
   &:hover {
-    background-color: #06c7fc;
+    background-color: $lorem-lighter-blue;
   }
 }
 
@@ -32,11 +33,11 @@
   font-size: 3rem;
   font-weight: 700;
   position: absolute;
-  top: 5px;
   right: 5px;
+  top: 5px;
 }
 
-.active {
+.btn--active {
   background-color: $lorem-blue;
   color: white;
   font-weight: 700;

@@ -10,13 +10,15 @@ const btnCloseModal = document.querySelector(".btn--close");
 const showModal = document.querySelectorAll(".show-modal");
 const body = document.querySelector("body");
 
+console.log(document.activeElement);
+
 // Toggle active class for language
 btnSmall.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     btnSmall.forEach((btn) => {
-      btn.classList.remove("active");
+      btn.classList.remove("btn--active");
       if (e.target.textContent === btn.textContent) {
-        btn.classList.add("active");
+        btn.classList.add("btn--active");
       }
     });
   });
@@ -24,9 +26,6 @@ btnSmall.forEach((btn) => {
 
 // Set the "aria-current" attribute to show the active link in the navigation
 navLink.forEach((link) => {
-  console.log(link);
-  console.log(link.href);
-  console.log(window.location.href);
   if (link.href === window.location.href) {
     link.classList.add("navigation__link--active");
   }

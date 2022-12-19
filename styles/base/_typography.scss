@@ -1,56 +1,71 @@
 @font-face {
+  font-display: swap;
   font-family: "OpenSans";
-  src: url(../../assets/fonts/OpenSans300.woff2) format("woff2");
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+  src: url(../../assets/fonts/OpenSans300.woff2) format("woff2");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
   src: url(../../assets/fonts/OpenSans700.woff2) format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
+  font-display: swap;
   font-family: "Raleway";
-  src: url(../../assets/fonts/Raleway200.woff2) format("woff2");
+  font-style: normal;
   font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+  src: url(../../assets/fonts/Raleway200.woff2) format("woff2");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "Raleway";
-  src: url(../../assets/fonts/Raleway400.woff2) format("woff2");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  src: url(../../assets/fonts/Raleway400.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Raleway";
-  src: url(../../assets/fonts/Raleway700.woff2) format("woff2");
-  font-weight: 700;
-  font-style: normal;
   font-display: swap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../assets/fonts/Raleway700.woff2) format("woff2");
 }
 
-p,
-h1,
-h2,
 a {
   color: $lorem-dark-gray;
 }
 
 p {
+  color: $lorem-dark-gray;
   font-family: "OpenSans", sans-serif;
-  font-weight: 300;
   font-size: 1.6rem;
+  font-weight: 300;
   line-height: 25px;
   margin-bottom: 3rem;
+
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+}
+
+h1,
+h2 {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  margin-top: 0;
+
+  @media (max-width: 576px) {
+    text-align: center;
+  }
 }
 
 h1 {
@@ -69,14 +84,6 @@ h2 {
   @media (max-width: 767px) {
     font-size: 2.4rem;
   }
-}
-
-h1,
-h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  margin-top: 0;
-  margin-bottom: 2rem;
 }
 
 .text-bold {
