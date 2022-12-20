@@ -61,7 +61,6 @@ navLink.forEach((link) => {
 });
 
 // Modal functionality
-
 const openModal = (e) => {
   const clicked = e.target.closest(".gallery__image");
   if (!clicked) {
@@ -92,6 +91,3 @@ document.addEventListener("keydown", (e) => {
   if (e.key !== "Escape") return;
   else closeModal();
 });
-
-// function getScrollbarWidth() {
-//  window.innerWidth - document.documentElement.clientWidth;
