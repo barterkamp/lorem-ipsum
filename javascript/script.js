@@ -78,10 +78,8 @@ const closeModal = () => {
   body.classList.remove("modal-open");
 };
 
-// showModal.forEach((modal) => {
+// open modal
 gallery.addEventListener("click", openModal);
-//   console.log(parent);
-// });
 
 // close modal with close button
 btnCloseModal.addEventListener("click", closeModal);
